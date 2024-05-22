@@ -63,3 +63,15 @@ switch (color) {
 
 //unused variable
 let unused = "I am never using this";
+
+
+//no default switch
+let newcolor = "green";
+switch (newcolor) {
+  case "red":
+    console.log("Red");
+    break;
+  case "blue":
+    console.log("Blue");
+    break;
+}
