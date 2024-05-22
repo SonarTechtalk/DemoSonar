@@ -1,7 +1,7 @@
 // Inefficient loop
 let numbers = [1, 2, 3, 4, 5];
-for (var i = 0; i < numbers.length; i++) {
-  console.log(numbers[i]);
+for (let value of numbers) {
+  console.log(value);
 }
 
 // Potential bug: missing break in switch case
@@ -9,6 +9,7 @@ let fruit = "apple";
 switch (fruit) {
   case "apple":
     console.log("An apple");
+    break;
   case "banana":
     console.log("A banana");
     break;
@@ -20,7 +21,6 @@ switch (fruit) {
 function checkNumber(num) {
     if (num > 10) {
       return "Greater than 10";
-      console.log("This will never be logged");
     }
     return "10 or less";
 }
@@ -43,7 +43,7 @@ greet("Alice");
 
 //Should be === instead of ==
 let a = 2;
-if (a == "2") {
+if (a === "2") {
   console.log("Equal");
 }
 //variable console loged before variable exists
@@ -63,3 +63,5 @@ switch (color) {
 
 //unused variable
 let unused = "I am never using this";
+
+let vaiable = "merge conflict";
